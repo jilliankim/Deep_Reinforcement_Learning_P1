@@ -42,7 +42,7 @@ Trained_agent.MOV is a video of the trained agent using doubel DQN method.
 
 Below is a plot of rewards per episode which illustrates that the agent is able to receive an average reward (over 100 episodes) of at least +13.
 
-![Plot of Rewards][Plot_of_Rewards.png]
+![Plot of Rewards](Plot_of_Rewards.png)
 
 
 ### Ideas for Future Work
