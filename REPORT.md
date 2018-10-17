@@ -33,6 +33,8 @@ Hyper parameters used for double DQN network are:
 
 Two fully connected layers with 'relu' activation neural network architecture is used for the model. 
 
+Trained_agent.MOV is a video of the trained agent using doubel DQN method.
+
 ### Plot of Rewards
 
 Below is a plot of rewards per episode which illustrates that the agent is able to receive an average reward (over 100 episodes) of at least +13.
