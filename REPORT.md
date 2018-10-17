@@ -30,6 +30,9 @@ Hyper parameters used for double DQN network are:
 - eps_start=1.0 
 - eps_end=0.01 
 - eps_decay=0.995
+- Tau = 1e-3
+- gamma = 0.99
+- learning_rate = 5e-4
 
 Two fully connected layers with 'relu' activation neural network architecture is used for the model. 
 
