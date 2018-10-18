@@ -20,6 +20,12 @@ The state space has 37 dimensions and contains the agent's velocity, along with 
 
 The task is episodic, and in order to solve the environment, the agent got an average score of +13 over 100 consecutive episodes.
 
+### Code
+
+Navigation.ipynb - contains the code to interact with the environment, calling trained agent and updating overall reward.
+dqn_agent.py - contains code to train the agent using double dqn method
+model.py - contains network used to attain weights 
+
 ### Learning Algorithm
 
 First I trained the agent using deep Q-network which solved the environment in 498 episodes. Next, I implemented double DQN network and this improved by solving the environment in 398 episodes. 
@@ -34,13 +40,19 @@ Hyper parameters used for double DQN network are:
 - gamma = 0.99
 - learning_rate = 5e-4
 
-Two fully connected layers with 'relu' activation neural network architecture is used for the model. 
+DQN training agent code can be found in dqn_agent.py file. To implement double DQN, I changed TD target to get Q_target value for maximum reward action from Q_local. The code for this can be found in line 88-92 of dqn_agent.py. 
 
-Trained_agent.MOV is a video of the trained agent using doubel DQN method.
+Two fully connected layers with 'relu' activation neural network architecture is used for the model which can be found in model.py file. 
+
+Trained_agent.MOV is a video of the trained agent using double DQN method.
+
+### Training Results
+
+![Training Results](training_results.png)
 
 ### Plot of Rewards
 
-Below is a plot of rewards per episode which illustrates that the agent is able to receive an average reward (over 100 episodes) of at least +13.
+Below is a plot of rewards per episode for traing which illustrates that the agent is able to receive an average reward (over 100 episodes) of at least +13.
 
 ![Plot of Rewards](Plot_of_Rewards.png)
 
